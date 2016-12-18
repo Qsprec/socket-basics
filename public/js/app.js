@@ -16,7 +16,6 @@ socket.on('message', function(message) {
 
 	var $messages = jQuery('.messages');
 	$messages.append('<p><strong>' + message.name + ' '+ timeString + '</strong></p>')
-	// jQuery('.messages').append('<p><strong>' + timeString + "</strong>: " + message.text + '</p>');
 	$messages.append('<p>' + message.text +'</p>')
 });
 
