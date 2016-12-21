@@ -4,3 +4,7 @@
 	display: flex;
 	align-items: center;
 }
+
+.messages {
+	list-style: none;
+}

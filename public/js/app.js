@@ -22,8 +22,11 @@ socket.on('message', function(message) {
 	var timeString = momentTimestamp.local().format('h:mm a');
 
 	var $messages = jQuery('.messages');
-	$messages.append('<p><strong>' + message.name + ' ' + timeString + '</strong></p>')
-	$messages.append('<p>' + message.text + '</p>')
+	var $message = jQuery('<li class="list-group-item"></li>');
+
+	$message.append('<li><strong>' + message.name + ' ' + timeString + '</strong></li>')
+	$message.append('<p>' + message.text + '</p>')
+	$messages.append($message);
 });
 
 
