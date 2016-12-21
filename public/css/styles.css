@@ -8,3 +8,11 @@
 .messages {
 	list-style: none;
 }
+
+h1 {
+	margin: 24px 0;
+}
+
+.messages p {
+	margin: 6px 0; 
+}
